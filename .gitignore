@@ -2,7 +2,7 @@
 
 
 # Creates a matrix object that can cache its inverse
-CacheMatrix <- function( m = matrix() ) {
+MakeCacheMatrix <- function( m = matrix() ) {
 
 	# Initialize the inverse property
     
@@ -44,7 +44,7 @@ CacheMatrix <- function( m = matrix() ) {
 }
 
 
-# Compute the inverse of the special matrix returned by "CacheMatrix"
+# Compute the inverse of the special matrix returned by "MakeCacheMatrix"
 # above. If the inverse has already been calculated (and the matrix has not
 # changed), then the "cachesolve" should retrieve the inverse from the cache.
 cacheSolve <- function(x, ...) {
